@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  tools:context=".fragment.ClassificationFragment">
+
+  <com.google.android.material.switchmaterial.SwitchMaterial
+    android:id="@+id/sw_camera"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="12dp"
+    android:layout_marginVertical="12dp"
+    android:text="Use Camera  "
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+  <com.google.android.material.card.MaterialCardView
+    android:id="@+id/cv_select"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="12dp"
+    android:layout_marginVertical="12dp"
+    app:cardBackgroundColor="@color/light_primary"
+    app:cardCornerRadius="4dp"
+    app:contentPaddingBottom="8dp"
+    app:contentPaddingLeft="16dp"
+    app:contentPaddingRight="16dp"
+    app:contentPaddingTop="8dp"
+    app:layout_constraintTop_toBottomOf="@id/sw_camera">
+
+    <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal">
+
+      <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_path"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginRight="8dp"
+        android:layout_weight="1"
+        android:text="No Image Selected" />
+
+      <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Select" />
+
+    </LinearLayout>
+
+  </com.google.android.material.card.MaterialCardView>
+
+  <com.google.android.material.card.MaterialCardView
+    android:id="@+id/cv_image"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_marginHorizontal="12dp"
+    android:layout_marginVertical="30dp"
+    app:cardBackgroundColor="@color/light_primary"
+    app:cardCornerRadius="4dp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/cv_select">
+
+    <ImageView
+      android:id="@+id/image_view"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent" />
+
+    <FrameLayout
+      android:id="@+id/camera_container"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:background="@color/black" />
+
+    <FrameLayout
+      android:id="@+id/box_container"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent" />
+
+  </com.google.android.material.card.MaterialCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

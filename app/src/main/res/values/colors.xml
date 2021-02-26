@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <color name="colorPrimary">#FF5722</color>
+  <color name="colorPrimaryVariant">#FF5722</color>
+  <color name="colorOnPrimary">#FFEAE4</color>
+
+  <color name="colorSecondary">#FF9800</color>
+  <color name="colorSecondaryVariant">#FF9800</color>
+  <color name="colorOnSecondary">#FFEB3B</color>
+
+  <color name="black">#FF000000</color>
+  <color name="white">#FFFFFFFF</color>
+
+  <color name="light_primary">#FFEAE4</color>
+  <color name="trans_primary">#B3FF5521</color>
+</resources>

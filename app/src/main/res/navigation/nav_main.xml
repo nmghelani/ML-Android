@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:id="@+id/nav_main"
+  app:startDestination="@id/classificationFragment">
+
+  <fragment
+    android:id="@+id/linearFragment"
+    android:name="com.shrewd.machinelearningexample.fragment.LinearFragment"
+    android:label="fragment_linear"
+    tools:layout="@layout/fragment_linear" />
+  <fragment
+    android:id="@+id/classificationFragment"
+    android:name="com.shrewd.machinelearningexample.fragment.ClassificationFragment"
+    android:label="fragment_classification"
+    tools:layout="@layout/fragment_classification" />
+  <fragment
+    android:id="@+id/clusteringFragment"
+    android:name="com.shrewd.machinelearningexample.fragment.ClusteringFragment"
+    android:label="fragment_clustering"
+    tools:layout="@layout/fragment_clustering" />
+  <fragment
+    android:id="@+id/cameraConnectionFragment"
+    android:name="com.shrewd.machinelearningexample.fragment.CameraConnectionFragment"
+    android:label="fragment_camera"
+    tools:layout="@layout/fragment_camera_connection" />
+</navigation>

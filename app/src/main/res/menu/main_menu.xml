@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+  <item
+    android:id="@id/linearFragment"
+    android:icon="@drawable/linear"
+    android:title="Linear" />
+  <item
+    android:id="@id/classificationFragment"
+    android:icon="@drawable/classification"
+    android:title="Classification" />
+  <item
+    android:id="@id/clusteringFragment"
+    android:icon="@drawable/clustering"
+    android:title="Clustering" />
+</menu>
